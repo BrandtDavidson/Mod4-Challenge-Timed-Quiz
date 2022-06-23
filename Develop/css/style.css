@@ -1,0 +1,23 @@
+:root {
+    --background: #E9DAD5;
+    --accent: #A99885;
+    --mainidentity: #675890;
+    --accentdark: #7562A4;
+    --textcolordark: #22183A;
+  }
+
+  body {
+    font-family: 'Anek Latin', sans-serif;
+  }
+
+  .hide {
+      display: none;
+  }
+
+  #questionField li {
+        cursor: pointer;
+  }
+
+  #questionField li:hover {
+        background-color: var(--mainidentity);
+}

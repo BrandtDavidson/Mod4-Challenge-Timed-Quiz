@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Javascript Timed Quiz" content="A timed quiz featuring 20 questions on javascript" />
+    <link rel=" stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="./Develop/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;400;500&display=swap" rel="stylesheet">
+
+
+    <title>Timed Quiz: Javascript</title>
+</head>
+
+<body>
+    <header class="container-fluid bg-dark text-light mb-5 p-3">
+        <div class="d-flex align-items-center justify-content-center">
+            <h1>Timed Quiz: Javascript</h1>
+            <h4 id="timer" class="hide ml-auto">
+                Time Remaining: <span id="time"></span>
+            </h4>
+        </div>
+    </header>
+
+    <div id="previousScores"><a>Highscores</a></div>
+
+    <section class="container my-5 bg-dark text-light w-100 m-auto rounded">
+
+        <div class="quizprompt">
+            <div id="questionStart" class="questions">
+                <h3>How it works:</h3>
+                <p class="d-flex align-items-center justify-content-center mb-3">
+                <ul>
+                    <li>8 Multiple Choice Questions.</li>
+                    <li>Each question has one correct answer.</li>
+                    <li>Incorrect answers subtract 20 seconds from the timer.</li>
+                    <li>You have 3 minutes to complete the quiz.</li>
+                    <hr> When you are ready, press the Start button.</hr>
+                    </p>
+                    <button id="start">Start</button>
+            </div>
+
+            <div id="questionField" class="hide">
+                <h2 id="questionTitle"></h2>
+                <ol id="answerBank" class="bank"></ol>
+            </div>
+
+            <div id="endQuiz" class="hide">
+                <h2>Thanks for playing!</h2>
+                <p>You got <span id="finalScore"> correct!</span></p>
+                <p>Player Name: <input type="text" id="playerName" max="20">
+                <button id="submit">Next</button>
+                </p>
+            </div>
+
+            <div id="ciScreen" class="ciScreenNo"></div>
+
+        </div>
+
+        <div class="hide" id="highscorelist">
+            <h2>Highscores</h2>
+            <ol id="playerList"></ol>
+        </div>
+    </section>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script src="./Develop/js/questionBank.js"></script>
+<script src="./Develop/js/script.js"></script>
+
+</html>
