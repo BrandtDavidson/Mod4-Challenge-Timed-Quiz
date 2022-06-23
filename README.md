@@ -30,7 +30,7 @@ The user has been given questions on Javascript fundamentals which can be answer
 
 ## Links
 
-[Link to Deployed Application]()
+[Link to Deployed Application](https://brandtdavidson.github.io/Mod4-Challenge-Timed-Quiz/)
 
 ## Screenshots
 
@@ -43,6 +43,6 @@ The user has been given questions on Javascript fundamentals which can be answer
 
 ## Credits
 
-Base code and styling developed and provided by 2U/Trilogy Education Services 
+Brandt Davidson, 2022
 
 ## Questions and Contact
